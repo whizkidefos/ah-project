@@ -1,0 +1,290 @@
+$swedeBlue: #01122A;
+$aztecGold: #BFA350;
+$towerGray: #ABBBBB;
+$jasper: #CE583C;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+a { text-decoration: none; }
+
+h1, h2, h3, h4 {
+    font-family: lust, serif !important;
+}
+
+h2 {
+    font-size: 5rem;
+
+    @media (max-width: 820px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 2rem;
+    }
+
+    // @media (max-width: 768px) {}
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+
+    @media (max-width: 450px) {
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.heritage-btn {
+    background: $swedeBlue;
+    border-radius: 50px;
+    color: $aztecGold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 25px;
+    transition: all 350ms;
+
+    &:hover {
+    background: $aztecGold;
+    color: $swedeBlue;
+    }
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+/*================= Banner =================*/
+.banner {
+    padding: 10rem 0;
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 540px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            color: $swedeBlue;
+            font-size: 7rem;
+            text-align: right;
+
+            @media (max-width: 768px) {
+                font-size: 5rem;
+                text-align: left;
+                margin-top: 2rem;
+            }
+
+            @media (max-width: 540px) {
+                font-size: 3rem;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+        }
+
+        a {
+            float: right;
+            margin-top: 20px;
+
+            @media (max-width: 540px) {
+                float: none;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+/*================= Showcase section =================*/
+.showcase {
+    background: $swedeBlue;
+    color: white;
+    padding: 5rem 0;
+
+    .main-callout {
+        border-radius: 20px;
+        background: $aztecGold;
+        background-image: url('../images/afghanistan5.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 450px;
+
+        display: flex;
+        align-items: center;
+
+        article {
+            padding: 0 3rem;
+        }
+    }
+
+    .split-callout {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        article {
+            width: calc(50% - 10px);
+            height: 450px;
+            border-radius: 20px;
+            padding: 0 3rem;
+
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        article.left {
+            background: $towerGray;
+            background-image: url('../images/afghanistan6.png');
+        background-repeat: no-repeat;
+        }
+
+        article.right {
+            background: $jasper;
+            background-image: url('../images/bhutan12.png');
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+    }
+
+}
+
+.cta {
+    article {
+        background: $aztecGold;
+        border-radius: 20px;
+        padding: 5rem 3rem;
+        margin: 40px 0 30px 0;
+
+        a {
+            color: $swedeBlue;
+            transition: color 350ms;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+/*================= footer section =================*/
+footer {
+    padding: 2rem 0;
+
+    article {
+        color: $swedeBlue;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img.logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+}
+
+.fade-in01 {
+	-webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+	        animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+}
+
+.fade-in02 {
+	-webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+	        animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+}
+
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-in-bottom 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
