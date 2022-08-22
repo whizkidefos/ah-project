@@ -35,6 +35,22 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 2rem;
+}
+
+@media (max-width: 820px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
 .container {
   max-width: 960px;
   width: 100%;
@@ -191,20 +207,58 @@ h2 {
   background-position: top right;
 }
 
-.cta article {
+.cta-blocks {
+  margin: 40px 0 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.cta-opensea-block {
   background: #BFA350;
   border-radius: 20px;
   padding: 5rem 3rem;
-  margin: 40px 0 30px 0;
+  width: calc(70% - 10px);
 }
 
-.cta article a {
-  color: #01122A;
-  transition: color 350ms;
+@media (max-width: 768px) {
+  .cta-opensea-block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
-.cta article a:hover {
+.cta-opensea-block a {
   color: white;
+  transition: color 300ms;
+}
+
+.cta-opensea-block a:hover {
+  color: #01122A;
+}
+
+.cta-roadmap-block {
+  background: #01122A;
+  border-radius: 20px;
+  padding: 5rem 3rem;
+  width: calc(30% - 10px);
+}
+
+@media (max-width: 768px) {
+  .cta-roadmap-block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.cta-roadmap-block a {
+  color: white;
+  transition: color 300ms;
+}
+
+.cta-roadmap-block a:hover {
+  color: #BFA350;
 }
 
 /*================= footer section =================*/
