@@ -16,6 +16,32 @@ html, body {
     scroll-behavior: smooth;
 }
 
+::selection {
+	background-color: $towerGray;
+	color: $swedeBlue;
+}
+
+//ScrollBar
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: $towerGray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $swedeBlue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $aztecGold;
+}
+
 a { text-decoration: none; }
 
 h1, h2, h3, h4 {
@@ -186,7 +212,7 @@ h3 {
 
         article.right {
             background: $jasper;
-            background-image: url('../images/bhutan12.png');
+            background-image: url('../images/myanmar4.png');
             background-repeat: no-repeat;
             background-position: top right;
         }
