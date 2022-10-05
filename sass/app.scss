@@ -287,6 +287,27 @@ h3 {
     }
 }
 
+/*================= Text block sections =================*/
+.what-are-they, .the-vision {
+  color: $swedeBlue;
+  padding: 5rem 0;
+}
+
+/*==================== Marquee ++++++++++++++++*/
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  border: 0;
+  background: $swedeBlue;
+  color: $aztecGold;
+  padding: 10px 0;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 /*================= footer section =================*/
 footer {
     padding: 2rem 0;

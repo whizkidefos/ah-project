@@ -260,6 +260,26 @@ h3 {
   color: #BFA350;
 }
 
+/*================= Text block sections =================*/
+.what-are-they, .the-vision {
+  color: #01122A;
+  padding: 5rem 0;
+}
+
+/*==================== Marquee ++++++++++++++++*/
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  border: 0;
+  background: #01122A;
+  color: #BFA350;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 /*================= footer section =================*/
 footer {
   padding: 2rem 0;
